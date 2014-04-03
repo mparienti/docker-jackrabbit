@@ -10,4 +10,12 @@ Currently available Ubuntu versions:
 - 12.04 LTS
 
 Installed software:
-- [Jackrabbit standalone](https://jackrabbit.apache.org/)
+- [Jackrabbit](https://jackrabbit.apache.org/)
+
+Currently available jackrabbit versions (see branches)
+- Jackrabbit 2.6.5 - Standalone
+
+Documentation
+-------------
+
+* [Backup and Restore](doc/backup.md)
