@@ -1,5 +1,5 @@
-FROM rootlogin/ubuntu-java:12.04
-MAINTAINER Simon Erhardt <me@rootlogin.ch>
+FROM java:7
+MAINTAINER Mikkel Gravgaard <mgn@skm.dk>
 
 # Add and run the installer
 ADD . /app
