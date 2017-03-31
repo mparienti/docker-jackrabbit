@@ -1,4 +1,4 @@
-FROM java:7
+FROM openjdk:7
 MAINTAINER Mikkel Gravgaard <mgn@skm.dk>
 
 # Add and run the installer

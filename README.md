@@ -6,8 +6,6 @@ You find it on the docker repository under [rootlogin/jackrabbit](https://index.
 The Base Image is https://github.com/chrootLogin/docker-ubuntu-java
 Or in the docker index https://index.docker.io/u/rootlogin/ubuntu-java
 
-Currently available Ubuntu versions:
-- 12.04 LTS
 
 Installed software:
 - [Jackrabbit](https://jackrabbit.apache.org/)

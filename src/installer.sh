@@ -1,16 +1,16 @@
 #!/bin/bash
-JACKRABBIT_URL="http://www.eu.apache.org/dist/jackrabbit/2.6.5/jackrabbit-standalone-2.6.5.jar"
-JACKRABBIT_MD5="d1aff4436f46f97908164549e4e6b854"
+JACKRABBIT_URL="http://www-eu.apache.org/dist/jackrabbit/2.14.0/jackrabbit-standalone-2.14.0.jar"
+JACKRABBIT_SHA="fa65819e4a22940154e3db9198ad630f0c39f6ad"
 echo Welcome to Jackrabbit Installer
 
 cd /app
 wget $JACKRABBIT_URL -O jackrabbit-standalone.jar #Download Jackrabbit
-DOWNLOAD_MD5=`md5sum /app/jackrabbit-standalone.jar  | cut -d" " -f1` # Get download hash
+DOWNLOAD_SHA=`sha1sum /app/jackrabbit-standalone.jar  | cut -d" " -f1` # Get download hash
 
-if [ $JACKRABBIT_MD5 != $DOWNLOAD_MD5 ]; then
-    echo The downloaded jackrabbit version has a wrong MD5 hash
-    echo Expected MD5 = $JACKRABBIT_MD5
-    echo MD5 of download = $DOWNLOAD_MD5
+if [ $JACKRABBIT_SHA != $DOWNLOAD_SHA ]; then
+    echo The downloaded jackrabbit version has a wrong SHA hash
+    echo Expected SHA = $JACKRABBIT_SHA
+    echo SHA of download = $DOWNLOAD_SHA
     exit 1
 fi
 
